@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .signature-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  @keyframes moveText {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(100%);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .moving-text-container {
+    overflow: hidden;
+  }
+  
+  .moving-text {
+    animation: moveText 30s linear infinite;
+  }
+  

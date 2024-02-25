@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Signature</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>DigitalSign</h1>
+  <div class="moving-text-container">
+    <p class="moving-text">Welcome to the Digital Signature Tool</p>
+  </div>
+</header>
+<div class="container">
+  <div class="signature-container">
+    <canvas id="signatureCanvas" width="800" height="400"></canvas>
+    <div class="button-container">
+      <button onclick="clearCanvas()">Clear</button>
+      <button onclick="downloadSignature()">Download Signature</button>
+      <input type="color" id="colorPicker" value="#000000">
+      <select id="fontSizeSelector">
+        <option value="small">Small</option>
+        <option value="medium" selected>Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <label for="eraserSizeSelector">Eraser Size:</label>
+      <select id="eraserSizeSelector">
+        <option value="10">Small</option>
+        <option value="20" selected>Medium</option>
+        <option value="30">Large</option>
+      </select>
+      <button onclick="toggleEraser()">Eraser</button>
+    </div>
+    <div id="eraserContainer"></div>
+  </div>
+  <div class="instructions">
+    <h2>Instructions:</h2>
+    <ul>
+      <li>Click and drag on the canvas to draw your signature.</li>
+      <li>Use the color picker to select a color for your signature.</li>
+      <li>Use the font size selector to choose the size of your signature.</li>
+      <li>Click the "Eraser" button to activate the eraser. Click again to deactivate it.</li>
+      <li>Use the eraser to remove parts of your signature.</li>
+      <li>Click the "Clear" button to clear the entire canvas.</li>
+      <li>Click the "Download Signature" button to download your signature as a JPEG image.</li>
+    </ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
